@@ -1,0 +1,16 @@
+/*
+ Theme Name:   bootCommerce Child
+ Description:  bootScore WooCommerce Child Theme
+ Author:       bootScore
+ Author URI:   https://bootscore.me
+ Template:     bootscore
+ Version:      5.1.0.2
+ Text Domain:  bootscore
+*/
+
+/* 
+All style editing is done via css/scss/_bscore_custom.scss
+*/
+.card-body {
+    font-size: 100% !important; 
+}
