@@ -3,9 +3,102 @@
     "title": "content",
     "fields": [
         {
+            "key": "field_619ba40a5b724",
+            "label": "Page Type",
+            "name": "page_type",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Front": "Front",
+                "About": "About",
+                "Contact": "Contact",
+                "Shop": "Shop"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        },
+        {
             "key": "field_619ba38997934",
-            "label": "My Text",
-            "name": "my_text",
+            "label": "Front",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_619ba40a5b724",
+                        "operator": "==",
+                        "value": "Front"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_619bab335b729",
+            "label": "Front text",
+            "name": "front_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_619bab405b72a",
+            "label": "About",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_619ba40a5b724",
+                        "operator": "==",
+                        "value": "About"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_619bab5a5b72b",
+            "label": "About Text",
+            "name": "about_text",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -25,9 +118,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "page_template",
                 "operator": "==",
-                "value": "post"
+                "value": "default"
             }
         ]
     ],
@@ -39,5 +132,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1637589927
+    "modified": 1637591913
 }

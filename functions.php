@@ -22,8 +22,7 @@ require get_template_directory() . '/woocommerce/woocommerce-functions.php';
 // acf-pro 
 //require get_template_directory_uri() . '/inc/acf-loader.php';
 require dirname( __FILE__ ) . '/inc/acf-loader.php';
-//echo get_template_directory();
-echo dirname( __FILE__ );
+
 
 
 // // Start functions here..
