@@ -40,7 +40,7 @@
                     {
                         "field": "field_619ba40a5b724",
                         "operator": "==",
-                        "value": ""
+                        "value": "Front"
                     }
                 ]
             ],
@@ -594,5 +594,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1637677783
+    "modified": 1637767906
 }

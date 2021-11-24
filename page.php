@@ -16,6 +16,7 @@
 get_header();
 ?>
 
+
 <div id="content" class="site-content container py-5 mt-5">
   <div id="primary" class="content-area">
 
@@ -25,8 +26,26 @@ get_header();
       <div class="col-md-8 col-xxl-9">
 
         <main id="main" class="site-main">
+        <?php the_post(); ?>
+        <!-- Title -->
+        <?php the_title('<h1>', '</h1>'); ?>
+        
+        <?php if(is_front_page()): ?>
+          <?php 
+              get_template_part('template-parts/front-page');
+          ?>
+        <?php endif ; ?>
+        
+        <?php 
+        if ( is_page( 'contact' ) ){
+          get_template_part('template-parts/contact-page');
+        }
 
-            <h1>HELLO WORLD</h1>
+        if ( is_page( 'about' ) ){
+          get_template_part('template-parts/about-page');
+        }
+            
+        ?>
         </main><!-- #main -->
 
       </div><!-- col -->
@@ -36,5 +55,4 @@ get_header();
   </div><!-- #primary -->
 </div><!-- #content -->
 
-<?php
-get_footer();
+<?php get_footer();

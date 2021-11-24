@@ -1,5 +1,7 @@
 <?php
 
+require dirname( __FILE__ ) . '/inc/contact-content.php';
+
 // style and scripts
 add_action('wp_enqueue_scripts', 'bootscore_child_enqueue_styles');
 function bootscore_child_enqueue_styles() {
