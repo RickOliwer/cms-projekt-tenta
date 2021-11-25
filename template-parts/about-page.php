@@ -1,6 +1,6 @@
 <p>Hello About</p>
 
-<div class="" style="color: blue;">
+<div class="" style="">
     <?php about_title(); ?>
 
 </div>

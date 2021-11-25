@@ -1,6 +1,7 @@
 <?php
 
 require dirname( __FILE__ ) . '/inc/contact-content.php';
+
 require dirname( __FILE__ ) . '/inc/about-content.php';
 
 // style and scripts

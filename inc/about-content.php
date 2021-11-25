@@ -17,4 +17,5 @@ if(!function_exists('about_title')){
         );
         }
     }
-    }
+
+}
