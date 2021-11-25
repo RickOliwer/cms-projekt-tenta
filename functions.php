@@ -1,8 +1,8 @@
 <?php
 
 require dirname( __FILE__ ) . '/inc/contact-content.php';
-
 require dirname( __FILE__ ) . '/inc/about-content.php';
+
 
 // style and scripts
 add_action('wp_enqueue_scripts', 'bootscore_child_enqueue_styles');

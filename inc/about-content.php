@@ -19,3 +19,23 @@ if(!function_exists('about_title')){
     }
 
 }
+
+if(!function_exists('about_excerpt')){
+
+    function about_excerpt(){
+
+        if(!function_exists('get_field')){
+            return;
+        }
+
+        $excerpt = get_field('about_excerpt', false, false);
+
+
+        if(!empty($excerpt)){
+            printf('<p>%s</p>',
+                    $excerpt,
+        );
+        }
+    }
+
+}

@@ -4,3 +4,8 @@
     <?php about_title(); ?>
 
 </div>
+
+<div class="" style="">
+    <?php about_excerpt(); ?>
+
+</div>
