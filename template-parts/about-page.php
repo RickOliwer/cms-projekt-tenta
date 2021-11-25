@@ -9,3 +9,8 @@
     <?php about_excerpt(); ?>
 
 </div>
+
+<div class="" style="width:300px">
+    <?php about_img(); ?>
+
+</div>
