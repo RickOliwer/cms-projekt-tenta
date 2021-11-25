@@ -2,3 +2,4 @@
 node_modules/
 inc/acf-pro/
 vendor/
+inc/.DS_Store
