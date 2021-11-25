@@ -14,3 +14,8 @@
     <?php about_img(); ?>
 
 </div>
+
+<div class="" style="width:300px">
+    <?php about_text(); ?>
+
+</div>

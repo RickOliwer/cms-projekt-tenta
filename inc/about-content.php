@@ -57,3 +57,23 @@ if(!function_exists('about_img')){
     }
 
 }
+
+if(!function_exists('about_text')){
+
+    function about_text(){
+
+        if(!function_exists('get_field')){
+            return;
+        }
+
+        $text = get_field('about_text', false, false);
+
+
+        if(!empty($text)){
+            printf('<p>%s</p>',
+                    $text,
+        );
+        }
+    }
+
+}
