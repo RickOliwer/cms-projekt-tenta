@@ -1,0 +1,18 @@
+
+.address_info{
+    background-color: blue;
+    color: red;
+
+    .address{
+    
+        p{
+            color: green;
+
+            &:hover{
+                color: blue;
+            }
+
+        }
+
+    }
+}

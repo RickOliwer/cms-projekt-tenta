@@ -11,6 +11,8 @@ function bootscore_child_enqueue_styles() {
   // style.css
   wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
 
+  wp_enqueue_script('fonts', 'https://kit.fontawesome.com/597b6f103f.js', [], false, false);
+
   // Compiled Bootstrap
   $modified_bootscoreChildCss = date('YmdHi', filemtime(get_stylesheet_directory() . '/css/lib/bootstrap.min.css'));
   wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . '/css/lib/bootstrap.min.css', array('parent-style'), $modified_bootscoreChildCss);
