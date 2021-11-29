@@ -54,7 +54,7 @@
 <?php endif ; ?>
 
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1LNjh-2WZq6P1tgPby06C71vhdQpYFh8"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=ADD_KEY_HERE"></script>
 <script type="text/javascript">
 
     let mymarker = document.querySelector('.marker')

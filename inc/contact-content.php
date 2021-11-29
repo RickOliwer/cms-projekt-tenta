@@ -179,6 +179,6 @@ if(!function_exists('my_contact_info')) {
  * @return void
  */
 function gmap_acf_init() {
-    acf_update_setting('google_api_key', 'AIzaSyD1LNjh-2WZq6P1tgPby06C71vhdQpYFh8');
+    acf_update_setting('google_api_key', 'ADD_KEY_HERE');
 }
 add_action('acf/init', 'gmap_acf_init');
