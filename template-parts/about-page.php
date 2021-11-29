@@ -1,7 +1,3 @@
-<p>Hello About</p>
-<<<<<<< HEAD
-<h2>sjdbkfnsldmövä'dbö</h2>
-=======
 
 <div class="" style="">
     <?php about_title(); ?>
@@ -22,4 +18,3 @@
     <?php about_text(); ?>
 
 </div>
->>>>>>> about-text
