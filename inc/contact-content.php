@@ -172,3 +172,13 @@ if(!function_exists('my_contact_info')) {
 		}
 	}
 }
+
+/**
+ * retun gmap api
+ *
+ * @return void
+ */
+function gmap_acf_init() {
+    acf_update_setting('google_api_key', 'AIzaSyD1LNjh-2WZq6P1tgPby06C71vhdQpYFh8');
+}
+add_action('acf/init', 'gmap_acf_init');
