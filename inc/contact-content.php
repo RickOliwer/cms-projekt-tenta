@@ -167,12 +167,8 @@ if(!function_exists('my_contact_info')) {
                     }
 
                 }
-
                 echo '</div>';
 			}
-	
 		}
-
-
 	}
 }
