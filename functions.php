@@ -1,6 +1,8 @@
 <?php
 
 require dirname( __FILE__ ) . '/inc/contact-content.php';
+require dirname( __FILE__ ) . '/inc/about-content.php';
+
 
 // style and scripts
 add_action('wp_enqueue_scripts', 'bootscore_child_enqueue_styles');
@@ -21,7 +23,7 @@ function bootscore_child_enqueue_styles() {
 require get_template_directory() . '/woocommerce/woocommerce-functions.php';
 
 
-// acf-pro 
+// acf-pro
 //require get_template_directory_uri() . '/inc/acf-loader.php';
 require dirname( __FILE__ ) . '/inc/acf-loader.php';
 
@@ -36,7 +38,7 @@ require dirname( __FILE__ ) . '/inc/acf-loader.php';
 //     if( $page_viewed == "wp-login.php" && $_SERVER['REQUEST_METHOD'] == 'GET') {
 //       wp_redirect($login_page);
 //       exit;
-//     } 
+//     }
 // }
 // add_action('init','redirect_login_page');
 
