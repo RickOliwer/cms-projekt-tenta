@@ -35,6 +35,6 @@ All style editing is done via css/scss/_bscore_custom.scss
 }
 img.preview_image {
     height: 200px;
-    border-radius: 50%;
+    border-radius: 5px;
     margin-bottom: 25px;
 }
