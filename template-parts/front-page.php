@@ -13,12 +13,7 @@
 			<div id="bestsellers_slide" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-inner">
 			    <?php
-					$get_most_sold = array(
-					'post_type' => 'product',
-					'meta_key' => 'total_sales',
-					'orderby' => 'meta_value_num',
-					'posts_per_page' => '5'
-					);
+					$get_most_sold = array('post_type' => 'product', 'meta_key' => 'total_sales', 'orderby' => 'meta_value_num', 'posts_per_page' => '5');
 					$q = new WP_Query($get_most_sold);
 			    if ($q->have_posts()) {
 			      while ( $q->have_posts() ) {
