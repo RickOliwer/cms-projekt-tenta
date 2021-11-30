@@ -27,6 +27,7 @@ All style editing is done via css/scss/_bscore_custom.scss
     height: 600px;
     width: 100%;
     background-size: cover;
+    background-position: center center;
 }
 .overlay_bg {
     background: #00000087;

@@ -14,12 +14,12 @@ get_header();?>
 	'orderby' => 'meta_value_num',
 	'posts_per_page' => '5'
 	);
-	$q = new WP_Query($get_most_sold)
-;?>
+	$q = new WP_Query($get_most_sold);?>
 
 <!-- Hook to add something nice -->
 <?php bs_after_primary(); ?>
 
+<!-- slider section -->
 <div class="row">
 	<div class="col-12">
 		<div id="bestsellers_slide" class="carousel slide" data-bs-ride="carousel">
@@ -58,6 +58,40 @@ get_header();?>
 	</div>
 </div>
 
+<!-- main categories -->
+<div class="row">
+	<div class="col-12">
+	<div class="container">
+		<h2 class="text-center p-5">Välj kategori</h2>
+		<?php
+			$get_main_cat = array(
+			    'orderby'    => 'name', // change this to wp order when done
+			    'order'      => 'asc',
+			    'hide_empty' => true,
+			    'parent'		 => 0
+			);
+			 
+			$mc_q = get_terms('product_cat', $get_main_cat);
+
+			if(!empty($mc_q) ){
+				echo '<div class="row">';
+			    foreach ($mc_q as $key => $mc) {
+		    		$get_thumb = get_term_meta($mc->term_id, 'thumbnail_id', true);
+	    			$cat_image = wp_get_attachment_url($get_thumb);
+	    			$cat_url = get_term_link($mc);
+
+			    	echo '<div class="col main_cat border">';
+			    	echo '<a href='.get_term_link($mc).'>';
+			    	echo '<img src="'.$cat_image.'">';
+			      echo '<h4 class="text-center p-4">'.$mc->name.'</h4>';
+			      echo '</a></div>';
+			    }
+			  echo '</div>';
+			}
+		?>
+	</div>
+	</div>
+</div>
 
 
 <script type="text/javascript">
