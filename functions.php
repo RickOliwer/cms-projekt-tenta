@@ -2,7 +2,8 @@
 
 require dirname( __FILE__ ) . '/inc/contact-content.php';
 require dirname( __FILE__ ) . '/inc/about-content.php';
-define('WW_OWM_APPID', 'a9f6719e37f20890ebff5d91724dec1f');
+require dirname( __FILE__ ) . '/inc/gmap.php';
+
 
 
 // style and scripts
@@ -20,6 +21,7 @@ function bootscore_child_enqueue_styles() {
 
   // custom.js
   wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/js/custom.js', false, '', true);
+  wp_enqueue_script('my-google-map-js', get_stylesheet_directory_uri() . '/inc/gmap.js', false, '', true);
 }
 
 // WooCommerce

@@ -173,26 +173,8 @@ if(!function_exists('my_contact_info')) {
 	}
 }
 
-if(!function_exists('my_gmap_api')){
 
-    function my_gmap_api(){
 
-        if(!function_exists('get_field')){
-            return;
-        }
-
-        $key = get_field('gmap_api_key', false, false);
-
-        
-        if(!empty($key)){
-            define('MY_API_KEY', $key);
-        }
-
-        return MY_API_KEY;
-    }
-}
-
-$myKey = my_gmap_api();
 
 // /**
 //  * retun gmap api
