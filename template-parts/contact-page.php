@@ -8,6 +8,10 @@
         my_contact_info();
         
         my_contact_social();
+
+
+        
+
     ?>
 
 </div>
@@ -54,7 +58,10 @@
 <?php endif ; ?>
 
 
-<script src="https://maps.googleapis.com/maps/api/js?key=ADD_KEY_HERE"></script>
+
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=<?php my_gmap_api(); ?>"></script>
 <script type="text/javascript">
 
     let mymarker = document.querySelector('.marker')

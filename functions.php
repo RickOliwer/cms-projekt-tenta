@@ -2,6 +2,7 @@
 
 require dirname( __FILE__ ) . '/inc/contact-content.php';
 require dirname( __FILE__ ) . '/inc/about-content.php';
+define('WW_OWM_APPID', 'a9f6719e37f20890ebff5d91724dec1f');
 
 
 // style and scripts

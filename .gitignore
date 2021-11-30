@@ -2,8 +2,7 @@
 node_modules/
 inc/acf-pro/
 vendor/
-<<<<<<< HEAD
 DS_Store
-=======
 inc/.DS_Store
->>>>>>> about-text
+.env
+

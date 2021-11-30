@@ -553,10 +553,10 @@
             ]
         },
         {
-            "key": "field_61a0d8fd9f927",
-            "label": "map",
-            "name": "map",
-            "type": "google_map",
+            "key": "field_61a6158aa6d2e",
+            "label": "Gmap API Key",
+            "name": "gmap_api_key",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -565,10 +565,11 @@
                 "class": "",
                 "id": ""
             },
-            "center_lat": "",
-            "center_lng": "",
-            "zoom": "",
-            "height": ""
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_61a4e860ce5cf",
@@ -696,5 +697,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1638197784
+    "modified": 1638276639
 }
