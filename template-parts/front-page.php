@@ -88,7 +88,7 @@
 						echo '<h3>'.$feed->name.'</h3>';
 						echo '<a href="'.$cat_url.'">Visa alla ('.$feed->count.')</a>';
 						echo '</div>';
-						echo do_shortcode('[products limit="3" orderby="rand" columns="3" category="'.$feed->slug.'"]');
+						echo do_shortcode('[products limit="4" orderby="rand" columns="4" category="'.$feed->slug.'"]');
 						echo '</div>';
 				}
 			?>
