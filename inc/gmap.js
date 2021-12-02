@@ -15,6 +15,7 @@
     
         // Find marker elements within map.
         var $markers = $el.find('.marker');
+        console.log("hello world");
     
         // Create gerenic map.
         var mapArgs = {
