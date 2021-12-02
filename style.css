@@ -14,3 +14,33 @@ All style editing is done via css/scss/_bscore_custom.scss
 .card-body {
     font-size: 100% !important; 
 }
+
+
+/* frontpage-tomas */
+.carousel-caption {
+    margin: 0 auto !important;
+    display: block !important;
+    position: absolute;
+    top: 20%;
+}
+.slider_bg {
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+.overlay_bg {
+    background: #00000087;
+    height: 100vh;
+}
+img.preview_image {
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.bs_badge {
+    position: absolute;
+    top: 20px;
+    font-size: 75%;
+    border-radius: 4px 0px 4px 0px;
+}
