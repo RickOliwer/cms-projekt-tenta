@@ -28,7 +28,11 @@ get_header();
         <main id="main" class="site-main">
         <?php the_post(); ?>
         <!-- Title -->
-        <?php the_title('<h1>', '</h1>'); ?>
+        <?php 
+        
+          the_title('<h1>', '</h1>'); 
+        ?>
+      
         
         <?php if(is_front_page()): ?>
           <?php 

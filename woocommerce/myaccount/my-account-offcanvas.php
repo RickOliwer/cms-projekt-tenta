@@ -51,7 +51,7 @@ if (!defined('ABSPATH')) {
           <?php do_action('woocommerce_login_form_start'); ?>
 
           <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-            <label for="username_1"><?php esc_html_e('Username or email address', 'woocommerce'); ?>&nbsp;<span class="required">*</span></label>
+            <label for="username_1"><?php esc_html_e('Username or email address HELLO!', 'woocommerce'); ?>&nbsp;<span class="required">*</span></label>
             <input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="username" id="username_1" autocomplete="username" value="<?php echo (!empty($_POST['username'])) ? esc_attr(wp_unslash($_POST['username'])) : ''; ?>" /><?php // @codingStandardsIgnoreLine 
                                                                                                                                                                                                                                                                                 ?>
           </p>

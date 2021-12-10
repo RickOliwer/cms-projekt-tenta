@@ -1,5 +1,9 @@
 <?php
 
+// WooCommerce
+//require get_template_directory() . '/woocommerce/woocommerce-functions.php';
+// WooCommerce END
+//require dirname( __FILE__ ) . '/woocommerce/woocommerce-functions.php';
 require dirname( __FILE__ ) . '/inc/contact-content.php';
 require dirname( __FILE__ ) . '/inc/about-content.php';
 require dirname( __FILE__ ) . '/inc/gmap.php';
