@@ -7,7 +7,7 @@
                     margin: auto;
                     margin-top: 2em;
                         .contact-title{
-                            
+                            font-size: 4em;
                         }
                 }
 
@@ -15,6 +15,7 @@
                     width: 90%;
                     margin: auto;
                     margin-top: 2em;
+                    margin-bottom: 8em;
                         .contact-excerpt{
 
                         }
@@ -31,6 +32,7 @@
                     width: 90%;
                     margin: auto;
                     margin-top: 2em;
+                    margin-bottom: 2em;
 
                         .social-media{
                             display: flex;
@@ -79,14 +81,17 @@
                         .contact-info{
                             
                                 .phone_info{
-                                    
-
+                                        display: flex;
+                                        flex-direction: column;
+                                        text-align: center;
                                         i{
-
+                                            display: inline-block;
+                                            margin-bottom: 0.35em;
                                         }
 
                                         .phone{
-
+                                            display: inline-block;
+                                            margin-bottom: 0.35em;
                                                 p{
 
                                                 }
@@ -94,13 +99,17 @@
                                 }
 
                                 .email_info{
-
+                                        display: flex;
+                                        flex-direction: column;
+                                        text-align: center;
                                         i{
-
+                                                display: inline-block;
+                                                margin-bottom: 0.35em;
                                         }
 
                                         .email{
-
+                                                display: inline-block;
+                                                margin-bottom: 0.35em;
                                                 p{
 
                                                 }
@@ -110,13 +119,17 @@
                                 }
 
                                 .address_info{
-
+                                        display: flex;
+                                        flex-direction: column;
+                                        text-align: center;
                                         i{
-
+                                                display: inline-block;
+                                                margin-bottom: 0.35em;
                                         }
 
                                         .address{
-
+                                                display: inline-block;
+                                                margin-bottom: 0.35em;
                                                 p{
 
                                                 }
@@ -127,10 +140,126 @@
                 }
 
                 .map-module{
-
+                        width: 100%;
                         .acf-map{
-
+                                width: 100%;
+                                height: 400px;
+                                border: #ccc solid 1px;
+                                
                         }
+                }
+        }
+}
+
+@media screen and (min-width: 800px){
+        .contact_info-module{
+
+                .contact-info{
+                        display: flex;
+                        justify-content: space-around;
+                }
+                    
+
+        }
+}
+
+@media screen and (min-width: 1600px){
+        .title-module{
+                max-width: 1320px;
+                padding-right: 0.75rem;
+                padding-left: 0.75rem;
+        }
+
+        .excerpt-module{
+                max-width: 1320px;
+                padding-right: 0.75rem;
+                padding-left: 0.75rem;
+        }
+
+        .content-module{
+                max-width: 1320px;
+                padding-right: 0.75rem;
+                padding-left: 0.75rem;
+        }
+
+        .social-module{
+                max-width: 1320px;
+                padding-right: 0.75rem;
+                padding-left: 0.75rem;
+        }
+        
+        .contact_info-module{
+                max-width: 1320px;
+                padding-right: 0.75rem;
+                padding-left: 0.75rem;
+        }
+
+        .map-contact{
+                margin: auto;
+                max-width: 1320px;
+                padding-right: 0.75rem;
+                padding-left: 0.75rem;
+                display: grid;
+                grid-template-columns: 3fr 8fr;
+
+                        .contact_info-module{
+                                margin: 0px !important;
+                                padding: 0px;
+                                .contact-info{
+                                        flex-direction: column;
+
+                                                h2{
+                                                        margin-bottom: 52px;
+                                                }
+
+                                                i{
+                                                        font-size: 40px !important;
+                                                        margin-right: 20px;
+                                                }
+
+                                                .phone_info{
+                                                        flex-direction: row !important;
+                                                        margin-bottom: 30px;
+                                                }
+
+                                                .email_info{
+                                                        flex-direction: row !important;
+                                                        margin-bottom: 30px;
+                                                }
+
+                                                .address_info{
+                                                        flex-direction: row !important;
+                                                        margin-bottom: 30px;
+
+                                                        .address{
+                                                                p{
+                                                                        margin: 0px !important;
+                                                                }
+                                                        }
+                                                }
+                                }
+                        }
+
+                        .map-module{
+                                
+                                .acf-map{
+                                        height: 400px !important;
+                                }
+                        }
+        }
+
+        .social-module{
+                
+
+                .social-media{
+
+                        justify-content: flex-end !important;
+
+                                i{
+                                        margin-left: 12px;
+                                        font-size: 30px !important;
+                                }
+
                 }
         }
 }

@@ -120,6 +120,8 @@ if(!function_exists('my_contact_info')) {
                 $email = get_sub_field('email');
 
                 echo '<div class="contact-info">';
+
+                echo '<h2>' . __('Contact', 'bootscore') . '</h2>';
                 printf(
                     '
                         <div class="phone_info">
