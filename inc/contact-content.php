@@ -12,7 +12,7 @@ if(!function_exists('my_contact_title')){
 
         
         if(!empty($title)){
-            printf('<h1>%s</h1>',
+            printf('<h1 class="contact-title">%s</h1>',
                     $title,
         );
         }
@@ -31,7 +31,7 @@ if(!function_exists('my_contact_excerpt')){
 
 
         if(!empty($excerpt)){
-            printf('<p>%s</p>',
+            printf('<p class="contact-excerpt">%s</p>',
                    $excerpt,
             );
         }
