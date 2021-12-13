@@ -16,7 +16,7 @@ get_header();
 
 </style>
 
-<div id="content" class="mt-5">
+<div class="container" id="content" class="mt-5">
   <div id="primary" class="content-area">
 
     <!-- Hook to add something nice -->
@@ -27,25 +27,29 @@ get_header();
         <main>
         <?php the_post(); ?>
         <!-- Title -->
-        <div class="title-module">
-            <?php my_contact_title(); ?>
-        </div>
-        
-        <div class="excerpt-module">
-            <?php my_contact_excerpt(); ?>
-        </div>
-        <div class="content-module">
-            <?php the_content(); ?>
-        </div>
-        <div class="contact_info-module">
-            <?php my_contact_info(); ?>
-        </div>
-        <div class="social-module">
-            <?php my_contact_social(); ?>
-        </div>
-        <div class="map-module">
-            <?php my_google_map(); ?>
-        </div>
+            <div class="title-module">
+                <?php my_contact_title(); ?>
+            </div>
+            
+            <div class="excerpt-module">
+                <?php my_contact_excerpt(); ?>
+            </div>
+
+            <div class="content-module">
+                <?php the_content(); ?>
+            </div>
+
+            <div class="contact_info-module">
+                <?php my_contact_info(); ?>
+            </div>
+            
+            <div class="social-module">
+                <?php my_contact_social(); ?>
+            </div>
+
+            <div class="map-module">
+                <?php my_google_map(); ?>
+            </div>
 
 
         </main><!-- #main -->

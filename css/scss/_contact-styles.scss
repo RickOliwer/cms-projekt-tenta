@@ -3,29 +3,41 @@
         .contact_container{
 
                 .title-module{
-
+                    width: 90%;
+                    margin: auto;
+                    margin-top: 2em;
                         .contact-title{
-
+                            
                         }
                 }
 
                 .excerpt-module{
-                    
+                    width: 90%;
+                    margin: auto;
+                    margin-top: 2em;
                         .contact-excerpt{
 
                         }
                 }
 
                 .content-module{
+                    width: 90%;
+                    margin: auto;
+                    margin-top: 2em;
 
                 }
 
                 .social-module{
+                    width: 90%;
+                    margin: auto;
+                    margin-top: 2em;
 
                         .social-media{
-
+                            display: flex;
+                            justify-content: space-around;
+                            //flex-direction: column;
                                 .social{
-
+                                    
                                 }
 
                                 .fb{
@@ -61,10 +73,13 @@
                 }
 
                 .contact_info-module{
-
+                    width: 90%;
+                    margin: auto;
+                    margin-top: 2em;
                         .contact-info{
-
+                            
                                 .phone_info{
+                                    
 
                                         i{
 
@@ -114,7 +129,7 @@
                 .map-module{
 
                         .acf-map{
-                            
+
                         }
                 }
         }

@@ -126,14 +126,14 @@ if(!function_exists('my_contact_info')) {
                             <i class="fas fa-mobile-alt" style="color: black; font-size: 60px;"></i>
                             <div class="phone">
                                 <p>%d</p>
-                            </div
+                            </div>
                         </div>
 
                         <div class="email_info">
                             <i class="fas fa-at" style="color: black; font-size: 60px;"></i>
                             <div class="email">
                                 <p>%s</p>
-                            </div
+                            </div>
                         </div>
                     ',
                     $phone,
@@ -157,7 +157,7 @@ if(!function_exists('my_contact_info')) {
                                         <p>%s</p>
                                         <p>%d</p>
                                         <p>%s</p>
-                                    </div
+                                    </div>
                                 </div>
                             ',
                             $address,
