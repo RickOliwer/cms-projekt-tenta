@@ -21,27 +21,32 @@ get_header();
 
     <!-- Hook to add something nice -->
 
-    <div class="">
-      <div class="">
+    <div class="contact_main">
+      <div class="contact_container">
 
         <main>
         <?php the_post(); ?>
         <!-- Title -->
+        <div class="title-module">
+            <?php my_contact_title(); ?>
+        </div>
+        
+        <div class="excerpt-module">
+            <?php my_contact_excerpt(); ?>
+        </div>
+        <div class="content-module">
+            <?php the_content(); ?>
+        </div>
+        <div class="contact_info-module">
+            <?php my_contact_info(); ?>
+        </div>
+        <div class="social-module">
+            <?php my_contact_social(); ?>
+        </div>
+        <div class="map-module">
+            <?php my_google_map(); ?>
+        </div>
 
-        <?php 
-            my_contact_title();
-
-            the_content();
-            my_contact_excerpt(); 
-            
-            my_contact_info();
-            
-            my_contact_social();
-
-            my_google_map();
-            
-
-        ?>
 
         </main><!-- #main -->
 

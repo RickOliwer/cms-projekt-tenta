@@ -1,18 +1,121 @@
+.contact_main{
 
-.address_info{
-    background-color: blue;
-    color: red;
+        .contact_container{
 
-    .address{
-    
-        p{
-            color: green;
+                .title-module{
 
-            &:hover{
-                color: blue;
-            }
+                        .contact-title{
 
+                        }
+                }
+
+                .excerpt-module{
+                    
+                        .contact-excerpt{
+
+                        }
+                }
+
+                .content-module{
+
+                }
+
+                .social-module{
+
+                        .social-media{
+
+                                .social{
+
+                                }
+
+                                .fb{
+
+                                        a{
+
+                                                i{
+
+                                                }
+                                        }
+                                }
+
+                                .ig{
+
+                                        a{
+
+                                                i{
+
+                                                }
+                                        }
+                                }
+
+                                .in{
+
+                                        a{
+
+                                                i{
+
+                                                }
+                                        }
+                                }
+                        }
+                }
+
+                .contact_info-module{
+
+                        .contact-info{
+
+                                .phone_info{
+
+                                        i{
+
+                                        }
+
+                                        .phone{
+
+                                                p{
+
+                                                }
+                                        }
+                                }
+
+                                .email_info{
+
+                                        i{
+
+                                        }
+
+                                        .email{
+
+                                                p{
+
+                                                }
+
+                                        }
+
+                                }
+
+                                .address_info{
+
+                                        i{
+
+                                        }
+
+                                        .address{
+
+                                                p{
+
+                                                }
+                                        }
+
+                                }
+                        }
+                }
+
+                .map-module{
+
+                        .acf-map{
+                            
+                        }
+                }
         }
-
-    }
 }
