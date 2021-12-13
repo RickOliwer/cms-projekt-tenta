@@ -51,9 +51,9 @@ require dirname( __FILE__ ) . '/inc/acf-loader.php';
 // }
 // add_action('init','redirect_login_page');
 
-// disable for posts
-add_filter('use_block_editor_for_post', '__return_false', 10);
+// // disable for posts
+// add_filter('use_block_editor_for_post', '__return_false', 10);
 
-// disable for post types
-add_filter('use_block_editor_for_post_type', '__return_false', 10);
+// // disable for post types
+// add_filter('use_block_editor_for_post_type', '__return_false', 10);
 

@@ -687,6 +687,27 @@
                 "operator": "==",
                 "value": "default"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-parts\/front-page.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-parts\/contact-page.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-parts\/about-page.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -697,5 +718,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1638276639
+    "modified": 1639386388
 }

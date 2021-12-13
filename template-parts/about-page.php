@@ -1,20 +1,53 @@
+<?php
+/**
+ * Template Name: About page
+*/
+?>
+<?php
+get_header();
+?>
 
-<div class="" style="">
-    <?php about_title(); ?>
 
-</div>
+<div id="content" class="site-content container py-5 mt-5">
+  <div id="primary" class="content-area">
 
-<div class="" style="">
-    <?php about_excerpt(); ?>
+    <!-- Hook to add something nice -->
 
-</div>
+    <div class="row">
+      <div class="col-md-8 col-xxl-9">
 
-<div class="" style="width:300px">
-    <?php about_img(); ?>
+        <main id="main" class="site-main">
+        <?php the_post(); ?>
+        <!-- Title -->
 
-</div>
 
-<div class="" style="width:300px">
-    <?php about_text(); ?>
+        <div class="" style="">
+            <?php about_title(); ?>
 
-</div>
+        </div>
+
+        <div class="" style="">
+            <?php about_excerpt(); ?>
+
+        </div>
+
+        <div class="" style="width:300px">
+            <?php about_img(); ?>
+
+        </div>
+
+        <div class="" style="width:300px">
+            <?php about_text(); ?>
+
+        </div>
+       
+        </main><!-- #main -->
+
+      </div><!-- col -->
+
+    </div><!-- row -->
+
+  </div><!-- #primary -->
+</div><!-- #content -->
+
+<?php get_footer();
