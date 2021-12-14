@@ -52,6 +52,35 @@ require dirname( __FILE__ ) . '/inc/acf-loader.php';
 // }
 // add_action('init','redirect_login_page');
 
+// Hide default login
+add_action('init', 'hide_login');
+
+function hide_login() {
+  if ( ! is_user_logged_in() ) {
+    // Get current URL
+    $current_url = str_replace('/', '', $_SERVER['REQUEST_URI'] );
+    // Add URL Endpoint for new admin url
+    $hiddenWpAdmin = 'new-secret-url';
+
+    // Check if current URL is correct admin URL
+    if ( $current_url == $hiddenWpAdmin ) {
+      // Redirect user to new login file
+      wp_redirect( '/'.$hiddenWpAdmin.'.php');
+      exit;
+    }
+
+    $notAccessable = [
+      'wp-admin',
+      'wp-login.php'
+    ];
+
+    if ( in_array( $current_url, $notAccessable) && $_GET['action'] !== "logout") {
+      wp_redirect('/404');
+      exit;
+    }
+  }
+}
+
 // // disable for posts
 // add_filter('use_block_editor_for_post', '__return_false', 10);
 
