@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
     // Show login popup on click
     $('#show_login, #show_signup').on('click', function(e) {
-        $('body').prepend('<div class="login_overlay"></div>');
+        $('.offcanvas-body').prepend('<div class="login_overlay"></div>');
         if($(this).attr('id') == 'show_login') {
             $('form#login').fadeIn(500);
             $('form#register').fadeOut(500);

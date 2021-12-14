@@ -2,24 +2,22 @@
     height: 100%;
     width: 100%;
     background-color: tomato;
-    position: fixed;
+    position: relative;
     z-index: 998;
 }
 
 #login {
     display: none;
     z-index: 999;
-    position: fixed;
-    top: 150px;
-    left: 50%;
-    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #register {
     display: none;
     z-index: 999;
-    position: fixed;
-    top: 150px;
-    left: 50%;
-    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
