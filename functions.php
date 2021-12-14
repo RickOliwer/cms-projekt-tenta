@@ -7,6 +7,7 @@
 require dirname( __FILE__ ) . '/inc/contact-content.php';
 require dirname( __FILE__ ) . '/inc/about-content.php';
 require dirname( __FILE__ ) . '/inc/gmap.php';
+require_once dirname( __FILE__ ) . '/inc/ajax-auth-function.php';
 
 
 

@@ -88,6 +88,14 @@
                 <i class="fas fa-search"></i>
               </button>
 
+
+              <?php if (is_user_logged_in()) { ?>
+                <a href="<?php echo wp_logout_url( home_url() ); ?>">Logout</a>
+              <?php } else { get_template_part('ajax', 'auth'); ?>
+                <a id="show_login" href="">Login</a>
+                <a id="show_signup" href="">Signup</a>
+              <?php } ?>
+
               <!-- User Toggler -->
               <button class="btn btn-outline-secondary ms-1 ms-md-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-user" aria-controls="offcanvas-user">
                 <i class="fas fa-user"></i>
