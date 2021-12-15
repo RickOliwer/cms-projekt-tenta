@@ -76,7 +76,7 @@
 
             <div class="header-actions d-flex align-items-center">
 
-            <li type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-shop" aria-controls="offcanvas-user"><a class="nav-link">Shop</a></li>
+            <li type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-shop" aria-controls="offcanvas-user"><a class="nav-link"><?php esc_html_e('Shop', 'bootscore'); ?></a></li>
 
               <?php if (is_user_logged_in()) { ?>
                 
