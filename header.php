@@ -50,12 +50,14 @@
             <a class="navbar-brand md d-none d-md-block" href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/logo.svg" alt="logo" class="logo md"></a>
 
             <!-- Offcanvas Navbar -->
+            
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-navbar">
               <div class="offcanvas-header bg-light">
                 <span class="h5 mb-0"><?php esc_html_e('Menu', 'bootscore'); ?></span>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
+
                 <!-- Bootstrap 5 Nav Walker Main Menu -->
                 <?php
                 wp_nav_menu(array(
@@ -74,14 +76,21 @@
 
             <div class="header-actions d-flex align-items-center">
 
-              <!-- Top Nav Widget -->
-              <div class="top-nav-widget">
-                <?php if (is_active_sidebar('top-nav')) : ?>
-                  <div>
-                    <?php dynamic_sidebar('top-nav'); ?>
-                  </div>
-                <?php endif; ?>
-              </div>
+            <li type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-shop" aria-controls="offcanvas-user"><a class="nav-link">Shop</a></li>
+
+              <?php if (is_user_logged_in()) { ?>
+                
+                <button class="btn btn-outline-secondary ms-1 ms-md-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-user" aria-controls="offcanvas-user">
+                  <i class="fas fa-user"></i>
+                </button>
+                <?php } else { get_template_part('ajax', 'auth'); ?>
+
+                  <button class="btn btn-outline-secondary ms-1 ms-md-2">
+                    <a id="show_login" class="show_login" href="">Login</a>
+
+                  </button>
+                
+                  <?php } ?>
 
               <!-- Search Toggler -->
               <button class="btn btn-outline-secondary ms-1 ms-md-2 top-nav-search-md" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-search" aria-expanded="false" aria-controls="collapse-search">
@@ -89,11 +98,6 @@
               </button>
 
 
-
-              <!-- User Toggler -->
-              <button class="btn btn-outline-secondary ms-1 ms-md-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-user" aria-controls="offcanvas-user">
-                <i class="fas fa-user"></i>
-              </button>
 
               <!-- Mini Cart Toggler -->
               <button class="btn btn-outline-secondary ms-1 ms-md-2 position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-cart" aria-controls="offcanvas-cart">
@@ -110,10 +114,15 @@
                 <?php } ?>
               </button>
 
-              <!-- Navbar Toggler -->
-              <button class="btn btn-outline-secondary d-lg-none ms-1 ms-md-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar">
-                <i class="fas fa-bars"></i>
-              </button>
+              
+ 
+
+                
+                  
+                  <!-- Navbar Toggler -->
+                  <button class="btn btn-outline-secondary d-lg-none ms-1 ms-md-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar">
+                    <i class="fas fa-bars"></i>
+                  </button>
 
             </div><!-- .header-actions -->
 
@@ -141,6 +150,20 @@
         <div class="offcanvas-body">
           <div class="my-offcancas-account">
             <?php include dirname( __FILE__ ) . '/woocommerce/myaccount/my-account-offcanvas.php'; ?>
+          </div>
+        </div>
+      </div>
+
+      
+          <!-- offcanvas Shop -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas-shop">
+        <div class="offcanvas-header bg-light">
+          <span class="h5 mb-0"><?php esc_html_e('Shop', 'bootscore'); ?></span>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="my-offcancas-account">
+            <?php include dirname( __FILE__ ) . '/woocommerce/myaccount/my-account-shop.php'; ?>
           </div>
         </div>
       </div>

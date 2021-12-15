@@ -1,23 +1,28 @@
 .login_overlay {
-    height: 100%;
-    width: 100%;
-    background-color: tomato;
-    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(51, 51, 51, 0.927);
+    position: fixed;
     z-index: 998;
 }
 
 #login {
     display: none;
     z-index: 999;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
 }
 
 #register {
     display: none;
     z-index: 999;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+
 }

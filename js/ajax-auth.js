@@ -1,8 +1,7 @@
 jQuery(document).ready(function($) {
-    // Show login popup on click
-    $('#show_login, #show_signup').on('click', function(e) {
-        $('.offcanvas-body').prepend('<div class="login_overlay"></div>');
-        if($(this).attr('id') == 'show_login') {
+    $('.show_login, #show_signup').on('click', function(e) {
+        $('body').prepend('<div class="login_overlay"></div>');
+        if($(this).attr('class') == 'show_login') {
             $('form#login').fadeIn(500);
             $('form#register').fadeOut(500);
         } else {
@@ -12,7 +11,6 @@ jQuery(document).ready(function($) {
         e.preventDefault();
     });
 
-    // Close login popup
     $(document).on('click', '.login_overlay, .close', function () {
         $('form#login, form#register').fadeOut(500, function () {
             $('.login_overlay').fadeOut(500);
@@ -20,7 +18,6 @@ jQuery(document).ready(function($) {
         return false;
     })
 
-    // Prepare AJAX on form submit
     $('form#login, form#register').on('submit', function (e) {
         if (!$(this).valid()) return false;
         $('p.status', this).show().text(ajax_auth_object.loadingmessage);
@@ -42,7 +39,7 @@ jQuery(document).ready(function($) {
             dataType: 'json',
             url: ajax_auth_object.ajaxurl,
             data: {
-                'action': action, //calls wp_ajax_nopriv_ajaxlogin
+                'action': action,
                 'username': username,
                 'password': password,
                 'email': email,
@@ -55,8 +52,6 @@ jQuery(document).ready(function($) {
                 }
             },
             error: function (xhr, ajaxOptions, thrownError) {
-                // console.log(xhr.status);
-                // console.log(thrownError.message);
                 console.log(thrownError);
                 console.log(xhr);
                 console.log("error");
@@ -76,17 +71,4 @@ jQuery(document).ready(function($) {
                 }
             }
         )
-    // $("form#login").validate({
-    //     rules: {
-    //         username: "required",
-    //         password: "required"
-    //     },
-    //     messages: {
-    //         username: "Pls type your username here",
-    //         password: "<h1>Password is REQUIRED!!!!!!</h1>"
-    //     },
-    //     submitHandler: function(form) {
-    //         form.submit();
-    //     }
-    // });
 });

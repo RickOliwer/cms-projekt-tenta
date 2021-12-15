@@ -1,5 +1,5 @@
 <form id="login" action="login" method="post">
-    <h3>Need account? <a id="pop_signup" href="">Create an Account</a></h3>
+    <h3>Need account? <a id="show_signup" href="">Create an Account</a></h3>
     <h2>Login</h2>
     <p class="status"></p>
     <?php wp_nonce_field('ajax-login-nonce', 'security'); ?>
@@ -14,7 +14,7 @@
 </form>
 
 <form action="register" id="register" method="post">
-    <h3>Already signed up? <a id="pop_login" href="">Login</a></h3>
+    <h3>Already signed up? <a id="pop_login" class="show_login" href="">Login</a></h3>
     <h2>Signup</h2>
 
     <p class="status"></p>

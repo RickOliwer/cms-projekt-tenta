@@ -81,6 +81,27 @@ function hide_login() {
   }
 }
 
+
+
+  function rc_widgets_init() {
+
+    // Product-nav
+    register_sidebar(array(
+      'name'          => esc_html__('Product Nav', 'bootscore'),
+      'id'            => 'product-nav',
+      'description'   => esc_html__('Add widgets here.', 'bootscore'),
+      'before_widget' => '<div class="mb-4">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h2 class="h4">',
+      'after_title'   => '</h2>',
+    ));
+    // Product-nav End
+
+  }
+  add_action('widgets_init', 'rc_widgets_init');
+
+
+
 // // disable for posts
 // add_filter('use_block_editor_for_post', '__return_false', 10);
 
