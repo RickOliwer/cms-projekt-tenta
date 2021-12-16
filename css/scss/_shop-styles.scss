@@ -1,0 +1,57 @@
+.login_button{
+
+        .show_login{
+            text-decoration: none;
+            color: #6c757d;
+
+                &:hover{
+                    color: #fff;
+                }
+        }
+}
+
+.shop_button{
+
+        .nav-link{
+            text-decoration: none;
+            color: #6c757d;
+        }
+}
+
+#offcanvas-shop{
+
+        .offcanvas-header{
+
+        }
+
+        .offcanvas-body{
+
+                .my-offcancas-account{
+
+                        div{
+
+                                h2{
+
+                                }
+
+                                .menu-shop-container{
+
+                                        .menu{
+
+                                                li{
+
+                                                        a{
+                                                            text-decoration: none;
+                                                            color: #6c757d;
+
+                                                                &:hover{
+                                                                    color: #4a4d4f;
+                                                                }
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+                }
+        }
+}

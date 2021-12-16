@@ -76,16 +76,16 @@
 
             <div class="header-actions d-flex align-items-center">
 
-            <li type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-shop" aria-controls="offcanvas-user"><a class="nav-link"><?php esc_html_e('Shop', 'bootscore'); ?></a></li>
+            <li type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-shop" aria-controls="offcanvas-user" class="shop_button"><a class="nav-link"><?php esc_html_e('Shop', 'bootscore'); ?></a></li>
 
               <?php if (is_user_logged_in()) { ?>
                 
-                <button class="btn btn-outline-secondary ms-1 ms-md-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-user" aria-controls="offcanvas-user">
+                <button class="btn btn-outline-secondary ms-1 ms-md-2 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-user" aria-controls="offcanvas-user">
                   <i class="fas fa-user"></i>
                 </button>
                 <?php } else { get_template_part('ajax', 'auth'); ?>
 
-                  <button class="btn btn-outline-secondary ms-1 ms-md-2">
+                  <button class="btn btn-outline-secondary ms-1 ms-md-2 login_button">
                     <a id="show_login" class="show_login" href="">Login</a>
 
                   </button>
