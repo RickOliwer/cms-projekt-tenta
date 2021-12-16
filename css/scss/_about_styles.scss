@@ -1,0 +1,93 @@
+.about_main{
+    
+        .about_container{
+            
+                .about_title{
+                    width: 100%;
+                    padding: 12px;
+                    margin: auto;
+                        h1{
+                            font-size: 4em;
+                        }
+                }
+
+                .about_excerpt{
+                    width: 100%;
+                    padding: 12px;
+                    margin: auto;
+                        p{
+
+                        }
+                }
+
+                .about_img{
+                    width: 100%;
+                    padding: 12px;
+                    margin: auto;
+
+                        img{
+                            width: 100%;
+                            
+                        }
+                }
+
+                .about_text{
+                    width: 100%;
+                    padding: 12px;
+                    margin: auto;
+                        p{
+
+                        }
+                }
+        }
+}
+
+@media screen and (min-width: 1136px){
+    .about_main{
+    
+        .about_container{
+            
+                .about_title{
+                    max-width: 1320px;
+                padding-right: 0.75rem;
+                padding-left: 0.75rem;
+                    margin: auto;
+                        h1{
+                            font-size: 4em;
+                        }
+                }
+
+                .about_excerpt{
+                    max-width: 1320px;
+                padding-right: 0.75rem;
+                padding-left: 0.75rem;
+                    margin: auto;
+                        p{
+
+                        }
+                }
+
+                .about_img{
+                    max-width: 1320px;
+                padding-right: 0.75rem;
+                padding-left: 0.75rem;
+
+                        img{
+                            width: 100%;
+                            
+                        }
+                }
+
+                .about_text{
+                    max-width: 1320px;
+                padding-right: 0.75rem;
+                padding-left: 0.75rem;
+                    margin: auto;
+                        p{
+
+                        }
+                }
+        }
+}
+}
+

@@ -12,7 +12,7 @@ if(!function_exists('about_title')){
 
 
         if(!empty($title)){
-            printf('<p>%s</p>',
+            printf('<h1>%s</h1>',
                     $title,
         );
         }

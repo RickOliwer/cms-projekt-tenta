@@ -8,35 +8,35 @@ get_header();
 ?>
 
 
-<div id="content" class="site-content container py-5 mt-5">
+<div id="content" class="mt-5">
   <div id="primary" class="content-area">
 
     <!-- Hook to add something nice -->
 
-    <div class="row">
-      <div class="col-md-8 col-xxl-9">
+    <div class="about_main">
+      <div class="about_container">
 
-        <main id="main" class="site-main">
+        <main>
         <?php the_post(); ?>
         <!-- Title -->
 
 
-        <div class="" style="">
+        <div class="about_title">
             <?php about_title(); ?>
 
         </div>
 
-        <div class="" style="">
+        <div class="about_excerpt">
             <?php about_excerpt(); ?>
 
         </div>
 
-        <div class="" style="width:300px">
+        <div class="about_img">
             <?php about_img(); ?>
 
         </div>
 
-        <div class="" style="width:300px">
+        <div class="about_text">
             <?php about_text(); ?>
 
         </div>
