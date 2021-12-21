@@ -37,7 +37,28 @@ require get_template_directory() . '/woocommerce/woocommerce-functions.php';
 //require get_template_directory_uri() . '/inc/acf-loader.php';
 require dirname( __FILE__ ) . '/inc/acf-loader.php';
 
+function rc_setup() {
 
+      // add theme support for custom logo
+      add_theme_support('custom-logo', [
+          'height' => 50,
+          'width' => 200,
+
+      ]);
+}
+//endif;
+add_action( 'after_setup_theme', 'rc_setup' );
+
+function rc_navbar_logo(){
+  $logo_id = get_theme_mod('custom_logo');
+  $logo = wp_get_attachment_image_src($logo_id, 'full');
+
+  if($logo){
+      echo '<img src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '" class="logo md">';
+  } else {
+      echo get_bloginfo('name');
+  }
+}
 
 // // Start functions here..
 // function redirect_login_page() {
